@@ -1,0 +1,43 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .openMenu {
+        display: block;
+    }
+
+    #contact-form {
+        width: 80%;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        max-width: 100%;
+    }
+
+    .img-ctn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-text {
+        max-width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    
+    .img-ctn {
+        margin-left: 0;
+    }
+}
