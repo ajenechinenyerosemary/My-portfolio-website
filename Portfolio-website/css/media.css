@@ -1,5 +1,5 @@
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     nav ul {
         display: none;
     }
@@ -18,13 +18,14 @@
     }
 
     .intro-text {
-        max-width: 100%;
+        max-width: 50%;
+        margin-left: -12px;
     }
 
-    .img-ctn {
+    /* .img-ctn {
         margin-left: 0;
         margin-top: 20px;
-    }
+    } */
     
     .about-content {
         flex-direction: column;
@@ -37,7 +38,29 @@
         margin-top: 20px;
     }
     
-    .img-ctn {
-        margin-left: 0;
+    /* .img-ctn {
+        margin-left: -12px;
+        margin-top: 20px;
+    } */
+
+ 
+/* Desktop menu styles */
+@media (min-width: 700px) {
+    .menuToggle {
+      display: none; 
+    }
+  
+    .mainMenu {
+      display: flex; 
+      flex-direction: row;
+      position: static;
+      width: auto;
+      background-color: transparent;
+      padding: 0;
+    }
+  
+    .mainMenu li {
+      margin-left: 20px;
+    }
     }
 }

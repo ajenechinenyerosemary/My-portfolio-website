@@ -29,37 +29,70 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-}
-
-nav {
+  }
+  
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin-left: 20px;
-}
-
-.openMenu, .closeMenu {
+  }
+  
+  .openMenu, .closeMenu {
     display: none;
     cursor: pointer;
-}
-
-/* Section Styles */
-main {
-    margin-top: 60px;
-}
+  }
+  
+  .mainMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: rgb(212, 62, 3);
+    padding: 20px;
+  }
+  
+  .mainMenu.active {
+    display: flex;
+  }
+  
+  .menuToggle {
+    cursor: pointer;
+  }
+  
+  /* @media (min-width: 768px) {
+    .menuToggle {
+      display: none;
+    }
+  
+    .mainMenu {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      width: auto;
+      background-color: transparent;
+      padding: 0;
+    }
+  
+    .mainMenu li {
+      margin-left: 20px;
+    }
+  } */
 
 section {
     padding: 40px 0;
@@ -165,11 +198,6 @@ section {
     margin-left: 70px;
 }
 
-
-
-
-
-/* Projects Section */
 /* Projects Section */
 #projects {
     padding: 40px 0;
