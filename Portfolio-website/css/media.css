@@ -44,23 +44,28 @@
     } */
 
  
-/* Desktop menu styles */
-@media (min-width: 700px) {
-    .menuToggle {
-      display: none; 
-    }
-  
+/* Media query for screens 780px and below */
+@media (max-width: 780px) {
     .mainMenu {
-      display: flex; 
-      flex-direction: row;
-      position: static;
-      width: auto;
-      background-color: transparent;
-      padding: 0;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(212, 62, 3);
+        padding: 20px;
     }
-  
+
+    .mainMenu.active {
+        display: flex;
+    }
+
     .mainMenu li {
-      margin-left: 20px;
+        margin: 10px 0;
     }
+
+    .menuToggle {
+        display: block;
     }
 }
