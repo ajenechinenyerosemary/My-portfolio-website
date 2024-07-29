@@ -1,51 +1,83 @@
 /* Responsive Design */
-@media (max-width: 780px) {
+@media (max-width: 700px) {
+    
+    body {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    
     nav ul {
         display: none;
+        align-items: center;
+        font-size: 20px;
+        
     }
 
     .openMenu {
         display: block;
+        
     }
 
-    #contact-form {
-        width: 80%;
+    .menuToggle {
+        display: block;
+       
     }
 
+   
     #home {
         flex-direction: column;
         text-align: center;
     }
 
-    .intro-text {
-        max-width: 50%;
-        margin-left: -12px;
+    .home-content {
+        flex-direction: column;
     }
 
-    /* .img-ctn {
+    .intro-text {
+        max-width: 100%;
         margin-left: 0;
-        margin-top: 20px;
-    } */
-    
+        order: 2;
+    }
+
+    .img-ctn {
+        margin: 0 auto 20px;
+        order: 1; 
+    }
+
+    .img-ctn img {
+        width: 200px; 
+    }
+
+   
     .about-content {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .about-text {
-        max-width: 100%;
+        max-width: 80%;
         padding-left: 0;
         margin-top: 20px;
+        order: 2; 
+        font-size: 18px;
+        padding: 25px;
     }
-    
-    /* .img-ctn {
-        margin-left: -12px;
-        margin-top: 20px;
-    } */
 
- 
-/* Media query for screens 780px and below */
-@media (max-width: 780px) {
+    
+    #contact-form {
+        width: 90%;
+    }
+
+    
     .mainMenu {
         display: none;
         flex-direction: column;
@@ -63,9 +95,5 @@
 
     .mainMenu li {
         margin: 10px 0;
-    }
-
-    .menuToggle {
-        display: block;
     }
 }
