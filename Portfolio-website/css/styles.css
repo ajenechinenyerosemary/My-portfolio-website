@@ -22,7 +22,7 @@ a:hover {
 
 /* Header Styles */
 header {
-    background: rgb(212, 62, 3);
+    background: #c0392b;
     color: #fff;
     padding: 15px 0;
     position: fixed;
@@ -85,12 +85,6 @@ section {
     max-width: 50%;
     text-align: left;
 }
-
-/* .intro-text h1 {
-    font-size: 29px;
-    color: #c0392b;
-    margin-left: 60px;
-} */
 
 .intro-text p  {
     font-size: 20px;
@@ -260,7 +254,7 @@ section {
 
 /* Footer */
 footer {
-    background: #333;
+    background: rgb(11, 11, 26);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -276,13 +270,13 @@ footer p {
 }
 
 .social-icon {
-    margin: 0 10px;
+    margin: 0 5px;
     color: #333;
     font-size: 20px;
     transition: color 0.3s ease, background 0.3s ease;
     background: #fff;
-    border-radius: 45%;
-    padding: 10px;
+    border-radius: 50%;
+    padding: 0px 5px;
     display: inline-block;
 }
 
